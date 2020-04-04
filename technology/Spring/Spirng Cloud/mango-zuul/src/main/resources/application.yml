@@ -1,0 +1,22 @@
+server:
+  port: 10010
+
+
+spring:
+  application:
+    name: mango-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+
+zuul:
+  routes:
+    service-provider: /user/**
+    service-consumer: /consumer/**
+
+
+
+
+

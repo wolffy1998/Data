@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+
+spring:
+  application:
+    name: service-consumer
+
+feign:
+  hystrix:
+    enabled: true

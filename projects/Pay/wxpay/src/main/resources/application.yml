@@ -1,0 +1,6 @@
+wxpay:
+  appid: 123456
+  mchid: 123456
+  key: 123456
+  cert: static/cert/apiclient_cert.p12
+

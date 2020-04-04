@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://thorne5691.cn:3306/spike?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false
+    username: root
+    password: aaabbb123
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initialSize: 5
+      minIdle: 5
+      maxActive: 20
+      # \u83B7\u53D6\u8FDE\u63A5\u8D85\u65F6\u65F6\u95F4
+      maxWait: 60000
+      # \u914D\u7F6E\u4E00\u4E2A\u8FDE\u63A5\u7684\u751F\u5B58\u65F6\u95F4
+      minEvictableIdleTimeMillis: 300000
+      maxEvictableIdleTimeMillis: 900000
+      # \u914D\u7F6E\u4E00\u6B21\u7A7A\u95F2\u68C0\u6D4B\u7684\u65F6\u95F4
+      timeBetweenEvictionRunsMillis: 60000
+      # \u9ED8\u8BA4\u914D\u7F6E
+      validationQuery: select 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      # \u76D1\u63A7\u62E6\u622A\u7684filters
+      filters: stat, wall, slf4j
+
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*/*.xml
+

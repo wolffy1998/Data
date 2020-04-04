@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mango.rumen.module.mapper.EmployeeMapper">
+
+    <insert id="saveEmployee" parameterType="com.mango.rumen.module.entity.Employee" useGeneratedKeys="true" keyProperty="id">
+        insert into employee (lastName, email, gender, d_id) value (#{lastName}, #{email}, #{gender}, #{dId})
+    </insert>
+
+</mapper>

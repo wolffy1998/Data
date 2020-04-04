@@ -1,0 +1,23 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: service-provider
+  datasource:
+    url: jdbc:mysql://thorne5691.cn:3306/leyou
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: whatermelon
+
+
+
+mybatis-plus:
+  type-aliases-package: com.mango.service.entity
+#  mapper-locations:
+#    - com.mang.service.mapper.mapping
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
