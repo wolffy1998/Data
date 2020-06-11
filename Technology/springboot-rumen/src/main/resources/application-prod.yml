@@ -1,7 +1,0 @@
-# 配置Https协议
-server:
-  ssl:
-    key-store: classpath:2425741_jjy.ltoyun.com.pfx
-    key-store-password: b17dg9nR
-    key-store-type: PKCS12
-  port: 8010
